@@ -1,0 +1,146 @@
+/* navigation */
+
+nav {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    position: fixed;
+    background-color: #ffffff;
+}
+
+nav .box {
+    display: flex;
+}
+
+.nav-content-0 {
+    width: 100px;
+    display: none;
+    align-items: center;
+}
+
+.nav-content-0 i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-content-1 {
+    width: 160px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content-1 img {
+    width: 160px;
+    cursor: pointer;
+}
+
+.nav-content-2 {
+    width: calc(100% - 320px);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.nav-content-2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-content-2 ul li a {
+    color: black;
+    font-family: var(--lexend);
+    font-size: 15px;
+}
+
+
+.nav-content-2 ul li a:hover {
+    color: var(--hover-text-color);
+    transition: color 0.3s ease;
+}
+
+.nav-content-3 {
+    width: 160px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-content-3 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav-content-3 ul li a:hover {
+    color: var(--hover-text-color);
+    transition: color 0.3s ease;
+}
+
+.nav-content-3 ul li:hover {
+    color: var(--hover-text-color);
+    transition: color 0.3s ease;
+}
+
+
+.nav-content-3 ul li:nth-child(4) {
+    display: none;
+}
+
+.nav-content-3 ul li a {
+    font-family: var(--lexend);
+    color: black;
+    font-size: 15px;
+
+}
+
+.nav-content-3 ul li i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media(max-width:992px) {
+    .nav-content-2 {
+        display: none;
+    }
+
+    .nav-content-0 {
+        display: flex;
+        width: 100px;
+    }
+
+    .nav-content-1 {
+        width: calc(100% - 200px);
+        justify-content: center;
+    }
+
+    .nav-content-3 {
+        width: 100px;
+    }
+
+    .nav-content-3 ul li {
+        margin-right: 10px;
+    }
+
+    .nav-content-3 ul li:nth-child(3) {
+        display: none;
+    }
+
+    .nav-content-3 ul li:nth-child(4) {
+        display: inline-block
+    }
+
+}
+
+@media(max-width:768px) {
+    .nav-content-3 ul li:nth-child(4) {
+        display: none
+    }
+
+
+}

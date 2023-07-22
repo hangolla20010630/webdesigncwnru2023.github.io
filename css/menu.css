@@ -1,0 +1,42 @@
+/* menu */
+
+.menu {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+.menu.active {
+    height: calc(100vh - 70px);
+}
+
+.menu a {
+    color: var(--text-color);
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    transition: var(--text-hover-transition);
+    font-family: var(--abel);
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.menu ul li {
+    width: calc(100% - 20px);
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    transition: background 0.3s ease;
+}
+
+.menu ul li:hover {
+    background-color: rgb(0, 89, 255);
+}
